@@ -149,5 +149,10 @@
             </plugin>
         </plugins>
     </build>
-
+ <developers>
+ 	<developer>
+ 		<name>Thiago Chaves</name>
+ 		<email>thiago.chaves04@gmail.com</email>
+ 	</developer>
+ </developers>
 </project>
