@@ -65,4 +65,11 @@ public class Filme {
     public void setGenero(String genero) {
         this.genero = genero;
     }
+
+	@Override
+	public String toString() {
+		return "Filme [id=" + id + ", nome=" + nome + ", duracao=" + duracao + ", genero=" + genero + "]";
+	}
+    
+    
 }
