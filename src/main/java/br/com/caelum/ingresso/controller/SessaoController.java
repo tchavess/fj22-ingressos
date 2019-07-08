@@ -57,7 +57,7 @@ public class SessaoController {
 		
 	}*/
 	
-	@PostMapping("/admin/sessao/")
+	@PostMapping("/admin/sessao")
 	@Transactional
 	public ModelAndView salva(@Valid SessaoForm form, BindingResult result) {
 		if(result.hasErrors()) return form(form.getSalaId(), form);
@@ -70,7 +70,7 @@ public class SessaoController {
 		
 		if(gerenciador.cabe(sessao)) {
 			sessaoDao.save(sessao);
-			return new ModelAndView("redirect:admin/sala/" + form.getSalaId() + "/sessoes");
+			return new ModelAndView("redirect:/admin/sala/" + form.getSalaId() + "/sessoes");
 		}
 		return form(form.getSalaId(), form);
 	}
