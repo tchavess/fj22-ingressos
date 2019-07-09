@@ -1,7 +1,10 @@
 package br.com.caelum.ingresso.controller;
 
+<<<<<<< HEAD
 import java.util.List;
 
+=======
+>>>>>>> 1aeaa957a9ad5f76b0c67252c3849c11bfd9d3cc
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +16,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+<<<<<<< HEAD
 import br.caelum.ingresso.validacao.GerenciadorDeSessao;
+=======
+>>>>>>> 1aeaa957a9ad5f76b0c67252c3849c11bfd9d3cc
 import br.com.caelum.ingresso.dao.FilmeDao;
 import br.com.caelum.ingresso.dao.SalaDao;
 import br.com.caelum.ingresso.dao.SessaoDao;
@@ -26,6 +32,10 @@ public class SessaoController {
 	private SalaDao salaDao;
 	@Autowired
 	private FilmeDao filmeDao;
+<<<<<<< HEAD
+=======
+	
+>>>>>>> 1aeaa957a9ad5f76b0c67252c3849c11bfd9d3cc
 	@Autowired
 	private SessaoDao sessaoDao;
 	
@@ -41,17 +51,27 @@ public class SessaoController {
 		return modelAndView;
 	}
 	
+<<<<<<< HEAD
 /*	@PostMapping(value = "/admin/sessao")
 	@Transactional
 	public ModelAndView salva(@Valid SessaoForm form, BindingResult result) {
 		
 		if(result.hasErrors()) {
 			return form(form.getSalaId(),form);
+=======
+	@PostMapping()
+	@Transactional
+	public ModelAndView salva(@Valid SessaoForm form, BindingResult result) {
+		
+		if(result.hasErrors()){
+			return form(form.getSalaId(), form);
+>>>>>>> 1aeaa957a9ad5f76b0c67252c3849c11bfd9d3cc
 		}
 		
 		Sessao sessao = form.toSessao(salaDao, filmeDao);
 		
 		sessaoDao.save(sessao);
+<<<<<<< HEAD
 		
 		return new ModelAndView("redirect:/admin/sala/" + form.getSalaId() + "/sessoes");
 		
@@ -75,4 +95,8 @@ public class SessaoController {
 		return form(form.getSalaId(), form);
 	}
 
+=======
+		return new ModelAndView("redirect:/admin/sala/" + form.getSalaId() + "/sessoes");
+	}
+>>>>>>> 1aeaa957a9ad5f76b0c67252c3849c11bfd9d3cc
 }

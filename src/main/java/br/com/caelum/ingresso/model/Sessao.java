@@ -7,12 +7,19 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+<<<<<<< HEAD
 
 @Entity
 public class Sessao {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+=======
+@Entity
+public class Sessao {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+>>>>>>> 1aeaa957a9ad5f76b0c67252c3849c11bfd9d3cc
 	private Integer id;
 	private LocalTime horario;
 	@ManyToOne
@@ -23,12 +30,20 @@ public class Sessao {
 	public Sessao() {
 		
 	}
+<<<<<<< HEAD
 	 
 	public Sessao(LocalTime horario, Filme filme, Sala sala) {
 		
 		this.horario = horario;
 		this.filme = filme;
 		this.sala = sala;
+=======
+	
+	public Sessao(LocalTime horario, Filme filme, Sala sala) {
+		this.horario = horario;
+		this.filme = filme;
+		this.sala =  sala;
+>>>>>>> 1aeaa957a9ad5f76b0c67252c3849c11bfd9d3cc
 	}
 
 	public Integer getId() {
@@ -64,5 +79,8 @@ public class Sessao {
 	}
 	
 	
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1aeaa957a9ad5f76b0c67252c3849c11bfd9d3cc
 }

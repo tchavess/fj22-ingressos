@@ -19,11 +19,6 @@
 
 
     <dependencies>
-    	<dependency>
-    		<groupId>junit</groupId>
-    		<artifactId>junit</artifactId>
-    		<version>4.12</version>
-    	</dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
@@ -136,10 +131,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-<<<<<<< HEAD
-=======
-               
->>>>>>> 1aeaa957a9ad5f76b0c67252c3849c11bfd9d3cc
+                <version>3.6.1</version>
                 <configuration>
                     <compilerArgs>
                         <arg>-parameters</arg>
@@ -157,21 +149,5 @@
             </plugin>
         </plugins>
     </build>
-<<<<<<< HEAD
-    
-    <developers>
-    	<developer>
-    		<name>Roberto Borges</name>
-    		<email>robertoborgesrbs@gmail.com</email>
-    	</developer>
-    </developers>
 
-=======
- <developers>
- 	<developer>
- 		<name>Thiago Chaves</name>
- 		<email>thiago.chaves04@gmail.com</email>
- 	</developer>
- </developers>
->>>>>>> 1aeaa957a9ad5f76b0c67252c3849c11bfd9d3cc
 </project>
